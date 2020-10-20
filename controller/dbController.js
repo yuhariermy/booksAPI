@@ -5,7 +5,7 @@ const customer = require('../model/customer')
 const employee = require('../model/employee')
 const inventory = require('../model/inventory')
 const itemSold = require('../model/itemSold')
-const transactions = require('../model/transactions')
+const transactions = require('../model/transaction')
 
 let db;
 (async () => {
