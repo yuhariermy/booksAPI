@@ -9,7 +9,7 @@ app.patch('/inventory', (req, res) => {
     const id = body.id
     const idFound = db.get('inventory', id)
     if (idFound) {
-        db.edit('books', id, body)
+        db.edit('inventory', id, body)
         res.send(body)
     } else {
         res.status(409).send("ID Not Found")

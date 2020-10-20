@@ -9,7 +9,7 @@ app.delete('/inventory', (req, res) => {
     const id = req.query.id
     const idFound = db.get('inventory', id)
     if (idFound) {
-        db.remove('books', id)
+        db.remove('inventory', id)
         res.send('Ok, Make Sure You Input Corect ID Number')
     } else {
         res.status(409).send("ID Not Found")
