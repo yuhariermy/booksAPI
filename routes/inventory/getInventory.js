@@ -7,7 +7,7 @@ app.get('/inventory', (req, res) => {
     const { id } = req.query
     //** get data by id */
     if (Object.keys(req.query).length == 0) {
-        res.status(405).send('to get all data use /get/all feature')
+        res.status(405).send('to get all data use /inventory/all feature')
     }
     else {
         //** get data by id */
@@ -32,7 +32,7 @@ app.get('/inventory', (req, res) => {
 app.get('/inventory/all', (req, res) => {
     //**!BLOCK QUERY INPUT */
     if (Object.keys(req.query).length > 0) {
-        res.status(405).send("don't use query to use getall feature")
+        res.status(405).send("wrong  input")
         return
     }
 
