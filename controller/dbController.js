@@ -5,7 +5,6 @@ const customer = require('../model/customer')
 const employee = require('../model/employee')
 const inventory = require('../model/inventory')
 const itemSold = require('../model/itemSold')
-const publisher = require('../model/publisher')
 const transactions = require('../model/transactions')
 
 let db;
@@ -91,9 +90,6 @@ function add(tableName, body) {
     }
     if (tableName == 'itemSold') {
         shapedBody = shapedObject(body, itemSold)
-    }
-    if (tableName == 'publisher') {
-        shapedBody = shapedObject(body, publisher)
     }
     if (tableName == 'transactions') {
         shapedBody = shapedObject(body, transactions)
