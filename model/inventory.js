@@ -1,6 +1,5 @@
 module.exports = [
-    'id',,
-    'publisherId',
+    'id',
     'author',
     'bookTitle',
     'yearPublished',
